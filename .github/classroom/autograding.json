@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Ricerca 1",
+      "setup": "g++ main.cpp lib.cpp -o main",
+      "run": "./main",
+      "input": "carlo\r\nfranco\r\ngino\r\npaolo\r\nalessandro\r\nfilomena\r\npiero\r\nsara\r\ngiulia\r\nsimone\r\nsimone",
+      "output": "9",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ricerca 2",
+      "setup": "g++ main.cpp lib.cpp -o main",
+      "run": "./main",
+      "input": "carlo\r\nfranco\r\ngino\r\npaolo\r\nalessandro\r\nfilomena\r\npiero\r\nsara\r\ngiulia\r\nsimone\r\npino",
+      "output": "non presente",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ricerca 3",
+      "setup": "g++ main.cpp lib.cpp -o main",
+      "run": "./main",
+      "input": "carlo\r\nfranco\r\ngino\r\npaolo\r\nalessandro\r\nfilomena\r\npiero\r\nsara\r\ngiulia\r\nsimone\r\ngino",
+      "output": "2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Ricerca 4",
+      "setup": "g++ main.cpp lib.cpp -o main",
+      "run": "./main",
+      "input": "carlo\r\nfranco\r\ngino\r\npaolo\r\nalessandro\r\nfilomena\r\npiero\r\nsara\r\nmaria\r\nsimone\r\nmariagiuseppina",
+      "output": "non presente",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
